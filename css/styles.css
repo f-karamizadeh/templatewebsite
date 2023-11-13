@@ -34,7 +34,6 @@ body {
    max-height: 100vh;
 }
 
-
 .hero {
   grid-row: row2;
   grid-column: col1-start;
@@ -93,6 +92,13 @@ body {
   padding: 0.7rem 0;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(58, 58, 58);
+  transition: all 0.3s ease-in-out;
+}
+
+.title-container button:hover {
+  cursor: pointer;
+  background-color: rgb(58, 58, 58);
+  color: white;
 }
 
 section{
@@ -111,13 +117,14 @@ aside {
     max-height: 100vh;
     min-height: 100vh;
 }
-li{
-    list-style: none;
+
+li {
+  list-style: none;
 }
 .smlink {
-    max-width: 25px;
-    max-height: 25px;
-    margin: .5em;
+  max-width: 25px;
+  max-height: 25px;
+  margin: 0.5em;
 }
 header {
     grid-row: row1;
