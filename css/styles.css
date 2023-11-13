@@ -43,10 +43,10 @@ body {
 }
 .header div{
     display: inline-block;
-    margin: 10px;
     border-top:2px none black  ;
-    padding-top: 10px ;
-    padding-left: 50px;
+    padding: 1rem 4rem;
+    /* padding-top: 10px ;
+    padding-left: 50px; */
 }
 
 .header div.left{
@@ -184,11 +184,14 @@ header div p{
 
 footer {
   grid-row: row3;
+  min-width: 90%;
+  padding-left: 4rem;
+  padding-bottom: 1em;
 }
 
-.footer{
+/* .footer{
   margin: 15px;
-}
+} */
 
 .footer h3{
   font-weight: bold;
