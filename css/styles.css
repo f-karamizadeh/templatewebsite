@@ -174,7 +174,7 @@ li {
 }
 header {
     grid-row: row1;
-    grid-column: col1-start, col2-end;
+    grid-column: span 2;
 }
 
 header div p{
