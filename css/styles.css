@@ -27,8 +27,13 @@ select {
 }
 
 body {
-  min-height: 100vh;
+   display: grid;
+   grid-template-rows: [row1-top] auto [row-button] auto;
+   grid-template-columns: [col1-start] auto [col2-end] 5%;
+   min-height: 100vh;
+   max-height: 100vh;
 }
+
 
 .hero {
   background-color: rgb(200, 224, 254);
@@ -86,4 +91,28 @@ body {
   padding: 0.7rem 0;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(58, 58, 58);
+}
+
+section{
+    grid-row: row-button;
+    grid-column: col1-start;
+    min-width: 90%;
+}
+
+.aside {
+    position: sticky;
+    grid-row: row-button;
+    grid-column: col2-end;
+    display: flex;
+    justify-content: end;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+li{
+    list-style: none;
+}
+.smlink {
+    max-width: 25px;
+    max-height: 25px;
+    margin: .5em;
 }
